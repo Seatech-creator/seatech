@@ -24,14 +24,6 @@ const formSchema = z.object({
   email: z.string().trim().email("Invalid email address").max(255),
   mobile: z.string().trim().regex(/^[0-9]{10}$/, "Mobile must be 10 digits"),
   
-  // Financials (Optional for simple quotes, but kept for full dealer registration)
-  year1: z.string().optional(),
-  turnoverYear1: z.string().optional(),
-  year2: z.string().optional(),
-  turnoverYear2: z.string().optional(),
-  year3: z.string().optional(),
-  turnoverYear3: z.string().optional(),
-  
   // Requirements
   additionalRemarks: z.string().trim().max(1000).optional(),
 });
@@ -52,12 +44,6 @@ const DealerApplication = () => {
       contactName: "",
       email: "",
       mobile: "",
-      year1: "",
-      turnoverYear1: "",
-      year2: "",
-      turnoverYear2: "",
-      year3: "",
-      turnoverYear3: "",
       additionalRemarks: "",
     },
   });
@@ -69,7 +55,6 @@ const DealerApplication = () => {
       
       if (user) {
         // FIX: Cast supabase to any to bypass strict type checking on the table
-        // FIX: Use .maybeSingle() instead of .single() to avoid 406 error if profile doesn't exist
         const { data, error } = await (supabase as any)
           .from('profiles')
           .select('*')
@@ -81,7 +66,6 @@ const DealerApplication = () => {
           return;
         }
 
-        // Cast data to any so we can access properties without TS complaining
         const profile = data as any;
 
         if (profile) {
@@ -95,7 +79,6 @@ const DealerApplication = () => {
             gstNumber: profile.gst_number || "",
           });
         } else {
-             // If no profile exists, at least pre-fill the email from the auth user
              form.setValue('email', user.email || "");
         }
       }
@@ -105,17 +88,20 @@ const DealerApplication = () => {
 
   // 2. Load Quote Items for Display
   useEffect(() => {
-    const rawBin = localStorage.getItem('quoteBin');
+    // Only use cartItems (fetched from DB by CartContext)
+    // We ignore localStorage bin now as we want single source of truth
     let displayText = "";
-
-    if (rawBin) {
-      const quoteBin: string[] = JSON.parse(rawBin);
-      displayText += quoteBin.join('\n');
-    }
     
     if (cartItems.length > 0) {
       const cartText = cartItems.map(item => `• ${item.quantity} x ${item.name}`).join('\n');
-      displayText += (displayText ? '\n' : '') + cartText;
+      displayText += cartText;
+    } else {
+      // Fallback only if cart is empty but bin exists (unlikely in new flow)
+      const rawBin = localStorage.getItem('quoteBin');
+      if (rawBin) {
+         const quoteBin: string[] = JSON.parse(rawBin);
+         displayText += quoteBin.join('\n');
+      }
     }
 
     if (displayText) {
@@ -130,15 +116,10 @@ const DealerApplication = () => {
       let userId = user?.id;
 
       if (!userId) {
-        // Fallback: If for some reason they bypassed Auth page, try anonymous or error
-        const { data: authData, error: authError } = await supabase.auth.signInAnonymously();
-        if (authError) throw new Error("Please login to submit a quote.");
-        userId = authData.user?.id;
+        throw new Error("Please login to submit a quote.");
       }
 
-      if (!userId) throw new Error("User session error.");
-
-      // A. Save/Update Profile (FORCE TYPE)
+      // A. Save/Update Profile
       const profileData = {
         id: userId,
         company_name: values.companyName,
@@ -149,59 +130,79 @@ const DealerApplication = () => {
         gst_number: values.gstNumber
       };
       
-      // FIX: Cast supabase to any
       const { error: profileError } = await (supabase as any)
         .from('profiles')
         .upsert(profileData);
 
       if (profileError) throw profileError;
 
-      // B. Create Quote Header (FORCE TYPE)
-      const quotePayload = {
-        user_id: userId,
-        status: 'pending',
-        total_items: cartItems.length,
-        additional_remarks: values.additionalRemarks
-      };
-
-      // FIX: Cast supabase to any
-      const { data: quoteData, error: quoteError } = await (supabase as any)
+      // B. Update ACTIVE Draft Quote to Pending
+      // 1. Find the draft quote
+      let { data: quote } = await (supabase as any)
         .from('quotes')
-        .insert(quotePayload)
-        .select()
-        .single();
+        .select('id')
+        .eq('user_id', userId)
+        .eq('status', 'draft')
+        .maybeSingle();
 
-      if (quoteError) throw quoteError;
-      
-      // Cast response data to any to access ID safely
-      const data = quoteData as any;
-      const quoteId = data.id;
+      let quoteId = quote?.id;
 
-      // C. Save Quote Items (FORCE TYPE)
-      const dbItems = cartItems.map(item => ({
-        quote_id: quoteId,
-        product_id: item.id,
-        product_name: item.name,
-        quantity: item.quantity
-      }));
+      if (quoteId) {
+        // Update existing draft
+        const { error: updateError } = await (supabase as any)
+          .from('quotes')
+          .update({
+             status: 'pending',
+             total_items: cartItems.length,
+             additional_remarks: values.additionalRemarks
+          })
+          .eq('id', quoteId);
 
-      if (dbItems.length > 0) {
-        // FIX: Cast supabase to any
-        const { error: itemsError } = await (supabase as any)
-          .from('quote_items')
-          .insert(dbItems);
-          
-        if (itemsError) throw itemsError;
+        if (updateError) throw updateError;
+
+      } else {
+        // Fallback: If no draft exists (maybe items were from localStorage/Bin?), create new Pending quote
+        // This handles the legacy localStorage case if CartContext failed
+        const quotePayload = {
+            user_id: userId,
+            status: 'pending',
+            total_items: cartItems.length || 1, // approximate
+            additional_remarks: values.additionalRemarks
+        };
+        
+        const { data: newQuote, error: insertError } = await (supabase as any)
+            .from('quotes')
+            .insert(quotePayload)
+            .select()
+            .single();
+            
+        if (insertError) throw insertError;
+        quoteId = newQuote.id;
+
+        // If we created a new quote, we might need to insert items if they aren't there?
+        // If cartItems has items, we should insert them now.
+        if (cartItems.length > 0) {
+             const dbItems = cartItems.map(item => ({
+                quote_id: quoteId,
+                product_id: item.id,
+                product_name: item.name,
+                quantity: item.quantity
+             }));
+             const { error: itemsError } = await (supabase as any)
+               .from('quote_items')
+               .insert(dbItems);
+             if (itemsError) throw itemsError;
+        }
       }
 
       toast.success("Quote Request Sent Successfully!", {
-        description: `Reference ID: ${quoteId.slice(0, 8)}. We will contact you shortly.`,
+        description: `Reference ID: ${quoteId.slice(0, 8)}. We will contact you shortly.`, 
         duration: 5000,
       });
 
       // D. Cleanup
       localStorage.removeItem('quoteBin');
-      clearCart();
+      clearCart(); // This will refresh context, and since draft is gone, it returns empty
       setQuoteListDisplay("");
       form.reset();
 
@@ -227,12 +228,12 @@ const DealerApplication = () => {
       <Navbar />
       
       {/* Hero Header */}
-      <div className="bg-slate-900 py-16 mb-12 relative overflow-hidden">
+      <div className="bg-slate-900 pt-32 pb-20 mb-12 relative overflow-hidden">
          <div className="absolute inset-0 opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
          <div className="container mx-auto px-4 text-center relative z-10">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">Finalize Your Quote Request</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">Finalize Your Quote</h1>
             <p className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
-              Please review your details below. Our team will generate a formal proforma invoice based on this information.
+              Review your details below. We will generate a formal proforma invoice and contact you for shipping.
             </p>
          </div>
       </div>
@@ -249,12 +250,12 @@ const DealerApplication = () => {
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 transition-shadow hover:shadow-md">
                   <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
                      <div className="bg-blue-50 p-2 rounded-lg"><Building2 className="h-6 w-6 text-blue-600" /></div>
-                     <h2 className="text-xl font-bold text-slate-900">Organization Details</h2>
+                     <h2 className="text-xl font-bold text-slate-900">Billing Details</h2>
                   </div>
                   
                   <div className="grid gap-6">
                     <FormField control={form.control} name="companyName" render={({ field }) => (
-                      <FormItem><FormLabel className="text-slate-700 font-semibold">Organization / Company Name *</FormLabel><FormControl><Input className="h-12" placeholder="e.g. Ministry of Textiles / Seatech Pvt Ltd" {...field} /></FormControl><FormMessage /></FormItem>
+                      <FormItem><FormLabel className="text-slate-700 font-semibold">Company / Organization Name *</FormLabel><FormControl><Input className="h-12" placeholder="e.g. Ministry of Textiles / Seatech Pvt Ltd" {...field} /></FormControl><FormMessage /></FormItem>
                     )} />
                     <FormField control={form.control} name="address" render={({ field }) => (
                       <FormItem><FormLabel className="text-slate-700 font-semibold">Billing Address *</FormLabel><FormControl><Textarea className="min-h-[80px]" placeholder="Enter complete billing address" {...field} /></FormControl><FormMessage /></FormItem>
@@ -286,44 +287,6 @@ const DealerApplication = () => {
                           <FormItem><FormLabel className="text-slate-700 font-semibold">Official Email *</FormLabel><FormControl><Input className="h-12" type="email" placeholder="name@organization.com" {...field} /></FormControl><FormMessage /></FormItem>
                         )} />
                       </div>
-                  </div>
-                </div>
-
-                {/* Financial Section (Optional) */}
-                <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 transition-shadow hover:shadow-md">
-                  <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
-                     <div className="bg-blue-50 p-2 rounded-lg"><Receipt className="h-6 w-6 text-blue-600" /></div>
-                     <div>
-                        <h2 className="text-xl font-bold text-slate-900">Financial History</h2>
-                        <p className="text-sm text-slate-500">Provide turnover if registering as a new dealer (Optional for quotes)</p>
-                     </div>
-                  </div>
-                  
-                  <div className="grid gap-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField control={form.control} name="year1" render={({ field }) => (
-                        <FormItem><FormLabel>Financial Year 1</FormLabel><FormControl><Input className="h-12" placeholder="e.g. 2023-24" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                      <FormField control={form.control} name="turnoverYear1" render={({ field }) => (
-                        <FormItem><FormLabel>Turnover (₹)</FormLabel><FormControl><Input className="h-12" type="number" placeholder="0.00" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField control={form.control} name="year2" render={({ field }) => (
-                        <FormItem><FormLabel>Financial Year 2</FormLabel><FormControl><Input className="h-12" placeholder="e.g. 2022-23" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                      <FormField control={form.control} name="turnoverYear2" render={({ field }) => (
-                        <FormItem><FormLabel>Turnover (₹)</FormLabel><FormControl><Input className="h-12" type="number" placeholder="0.00" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField control={form.control} name="year3" render={({ field }) => (
-                        <FormItem><FormLabel>Financial Year 3</FormLabel><FormControl><Input className="h-12" placeholder="e.g. 2021-22" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                      <FormField control={form.control} name="turnoverYear3" render={({ field }) => (
-                        <FormItem><FormLabel>Turnover (₹)</FormLabel><FormControl><Input className="h-12" type="number" placeholder="0.00" {...field} /></FormControl><FormMessage /></FormItem>
-                      )} />
-                    </div>
                   </div>
                 </div>
                 
@@ -363,7 +326,7 @@ const DealerApplication = () => {
 
           {/* RIGHT COLUMN: The Summary (4 cols) */}
           <div className="md:col-span-4">
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200 sticky top-24">
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-slate-200 sticky top-32">
               <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
                 <Receipt className="h-5 w-5 text-blue-600" /> Quote Summary
               </h3>

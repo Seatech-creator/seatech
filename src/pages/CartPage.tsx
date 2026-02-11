@@ -39,7 +39,7 @@ const CartPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
       <Navbar />
-      <div className="flex-grow container mx-auto px-4 py-12">
+      <div className="flex-grow container mx-auto px-4 py-12 pt-32">
         <div className="flex items-center gap-3 mb-8">
            <div className="p-2 bg-blue-100 rounded-lg"><FileText className="h-6 w-6 text-blue-600" /></div>
            <h1 className="text-3xl font-bold text-slate-900">Quote Request Cart</h1>

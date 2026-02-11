@@ -72,7 +72,7 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Header */}
-      <div className="bg-slate-900 py-20 relative overflow-hidden">
+      <div className="bg-slate-900 pt-32 pb-20 relative overflow-hidden">
          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500 via-slate-900 to-slate-900"></div>
          <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Get in Touch</h1>

@@ -1,148 +1,21 @@
-// --- Import 1: Castlery Silver Grey Steel Shelving Cabinets ---
-import castleryS1 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-S.jpg";
-import castleryS2 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-S2.jpg";
-import castleryS3 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-S3.jpg";
-import castleryM1 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-M.jpg";
-import castleryM2 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-M2.jpg";
-import castleryM3 from "@/assets/products/Castlery-Steel-Shelving-Cabinets/Castlery-Steel-Shelving-M3.jpg";
-
-// --- Import 2: Low-back Chair With Without Armrest ---
-import dnrs1 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-S.jpg";
-import dnrs2 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-S2.jpg";
-import dnrs3 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-S3.jpg";
-import dnrm1 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-M.jpg";
-import dnrm2 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-M2.jpg";
-import dnrm3 from "@/assets/products/Low-back Chair With Without Armrest/Low-back Chair With Without Armrest-M3.jpg";
-
-// --- Import 3: Low-back Revolving Chair of Adjustable height with Wheels ---
-import gargS1 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-S.jpg";
-import gargS2 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-S2.jpg";
-import gargS3 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-S3.jpg";
-import gargM1 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-M.jpg";
-import gargM2 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-M2.jpg";
-import gargM3 from "@/assets/products/Low-back Revolving Chair of Adjustable height with Wheels/Low-back Revolving Chair of Adjustable height with Wheels-M3.jpg";
-
-// --- Import 4: Two – drawer type Steel Filing Cabinets ---
-import steadS1 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-S.jpg";
-import steadS2 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-S2.jpg";
-import steadS3 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-S3.jpg";
-import steadM1 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-M.jpg";
-import steadM2 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-M2.jpg";
-import steadM3 from "@/assets/products/Two – drawer type Steel Filing Cabinets/Two – drawer type Steel Filing Cabinets-M3.jpg";
-
-// --- Import 5: Modular Table with Particle Board Table Top and Metal Understructure ---
-import kantoorS1 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-S.jpg";
-import kantoorS2 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-S2.jpg";
-import kantoorS3 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-S3.jpg";
-import kantoorM1 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-M.jpg";
-import kantoorM2 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-M2.jpg";
-import kantoorM3 from "@/assets/products/Modular Table with Particle Board Table Top and Metal Understructure/Modular Table with Particle Board Table Top and Metal Understructure-M3.jpg";
-
-// --- Import 6: Rectangle Executive Table with Keyboard Tray and Pedestal Unit ---
-import aarihantS1 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-S.jpg";
-import aarihantS2 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-S2.jpg";
-import aarihantS3 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-S3.jpg";
-import aarihantM1 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-M.jpg";
-import aarihantM2 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-M2.jpg";
-import aarihantM3 from "@/assets/products/Rectangle Executive Table with Keyboard Tray and Pedestal Unit/Rectangle Executive Table with Keyboard Tray and Pedestal Unit-M3.jpg";
-
-// --- Import 7: Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type ---
-import supremeS1 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-S.jpg";
-import supremeS2 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-S2.jpg";
-import supremeS3 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-S3.jpg";
-import supremeM1 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-M.jpg";
-import supremeM2 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-M2.jpg";
-import supremeM3 from "@/assets/products/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type/Metal Shelving Racks (Adjustable Type) confirming to IS 1883 Open-type-M3.jpg";
-
-// --- Import 8: Auditorium Chair (V2) ---
-import audiS1 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-S.jpg";
-import audiS2 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-S2.jpg";
-import audiS3 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-S3.jpg";
-import audiM1 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-M.jpg";
-import audiM2 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-M2.jpg";
-import audiM3 from "@/assets/products/Auditorium Chair (V2)/Auditorium Chair (V2)-M3.jpg";
-
-// --- Import 9: Square Classroom Stools Load of 75 Kg ---
-import stoolS1 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-S.jpg";
-import stoolS2 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-S2.jpg";
-import stoolS3 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-S3.jpg";
-import stoolM1 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-M.jpg";
-import stoolM2 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-M2.jpg";
-import stoolM3 from "@/assets/products/Square Classroom Stools Load of 75 Kg/Square Classroom Stools Load of 75 Kg-M3.jpg";
-
-// --- Import 10: Chair Frame type Legs Half writing Pad Studs ---
-import hansS1 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-S.jpg";
-import hansS2 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-S2.jpg";
-import hansS3 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-S3.jpg";
-import hansM1 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-M.jpg";
-import hansM2 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-M2.jpg";
-import hansM3 from "@/assets/products/Chair Frame type Legs Half writing Pad Studs/Chair Frame type Legs Half writing Pad Studs-M3.jpg";
-
-// --- Import 11: Sofas & Couches, 3 Seater ---
-import sofaS1 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-S.jpg";
-import sofaS2 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-S2.jpg";
-import sofaS3 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-S3.jpg";
-import sofaM1 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-M.jpg";
-import sofaM2 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-M2.jpg";
-import sofaM3 from "@/assets/products/Sofas & Couches, 3 Seater/Sofas & Couches, 3 Seater-M3.jpg";
-
-// --- Import 12: Metal bed with Headboard only of color Black ---
-import knkS1 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-S.jpg";
-import knkS2 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-S2.jpg";
-import knkS3 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-S3.jpg";
-import knkM1 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-M.jpg";
-import knkM2 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-M2.jpg";
-import knkM3 from "@/assets/products/Metal bed with Headboard only of color Black/Metal bed with Headboard only of color Black-M3.jpg";
-
-// --- Import 13: Desk and Chair (Separate) for Age Group for 1 Seater ---
-import sentimentS1 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-S.jpg";
-import sentimentS2 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-S2.jpg";
-import sentimentS3 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-S3.jpg";
-import sentimentM1 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-M.jpg";
-import sentimentM2 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-M2.jpg";
-import sentimentM3 from "@/assets/products/Desk and Chair (Separate) for Age Group for 1 Seater/Desk and Chair (Separate) for Age Group for 1 Seater-M3.jpg";
-
-// --- Import 14: Computer table with additional unit ---
-import compS1 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-S.jpg";
-import compS2 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-S2.jpg";
-import compS3 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-S3.jpg";
-import compM1 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-M.jpg";
-import compM2 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-M2.jpg";
-import compM3 from "@/assets/products/Computer table with additional unit/Computer table with additional unit-M3.jpg";
-
-// --- Import 15: 1 Seater Classroom Desk for 12+ Years Age Group ---
-import goyalS1 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-S.jpg";
-import goyalS2 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-S2.jpg";
-import goyalS3 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-S3.jpg";
-import goyalM1 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-M.jpg";
-import goyalM2 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-M2.jpg";
-import goyalM3 from "@/assets/products/1 Seater Classroom Desk for 12+ Years Age Group/1 Seater Classroom Desk for 12+ Years Age Group-M3.jpg";
-
-// --- Import 16: Desk and Bench Integrated for Age Group for 3 Seater ---
-import bedsS1 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-S.jpg";
-import bedsS2 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-S2.jpg";
-import bedsS3 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-S3.jpg";
-import bedsM1 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-M.jpg";
-import bedsM2 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-M2.jpg";
-import bedsM3 from "@/assets/products/Desk and Bench Integrated for Age Group for 3 Seater/Desk and Bench Integrated for Age Group for 3 Seater-M3.jpg";
-
-// --- Import 17: Rectangular Cafeteria Chair With Armrest ---
-// (This was product 11 in the last file, but I don't see images for it in your screenshots)
-// I will use placeholders for this one.
-import placeholder1 from "@/assets/products/product-placeholder-1.png";
-import placeholder2 from "@/assets/products/product-placeholder-2.png";
-import placeholder3 from "@/assets/products/product-placeholder-3.png";
-
-
-export interface ProductImage {
-  thumbnail: string;
-  main: string;
-}
-
+// ==========================================
+// 1. INTERFACES
+// ==========================================
 export interface ProductSpecification {
-  category: string;
   name: string;
   value: string;
+  category: string;
+}
+
+export interface ProductImage {
+  main: string;
+  thumbnail: string;
+}
+
+export interface SellerInfo {
+  name: string;
+  verified: boolean;
+  rating: number;
 }
 
 export interface Product {
@@ -150,435 +23,1163 @@ export interface Product {
   name: string;
   brand: string;
   model: string;
+  category: string;
   price: number;
-  mrp: number;
-  discount: number;
   availability: number;
   minQty: number;
-  countryOfOrigin: string;
-  localContent: number;
-  seller: {
-    name: string;
-    verified: boolean;
-    rating: string;
-  };
   images: ProductImage[];
   specifications: ProductSpecification[];
+  discount: number;
+  seller: SellerInfo;
+  countryOfOrigin: string;
 }
 
+// ==========================================
+// 2. PRODUCT DATA
+// ==========================================
 export const products: Product[] = [
-  // --- The Original Castlery Product ---
+  // --- Category: Auditorium Chair (V2) ---
   {
-    id: "5116877-84550989804",
-    name: "Seatech Silver Grey Colored Steel Shelving Cabinets",
-    brand: "Seatech",
-    model: "(NXT -04)",
-    price: 15000.0,
-    mrp: 46000.0,
-    discount: 67,
-    availability: 1800,
-    minQty: 1,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: castleryS1, main: castleryM1 },
-      { thumbnail: castleryS2, main: castleryM2 },
-      { thumbnail: castleryS3, main: castleryM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Governing Standard", value: "Conformity to IS 3312" },
-      { category: "Generic", name: "Types of Almirah", value: "Small (1150 mm X 760 mm X 430 mm)" },
-      { category: "Test Report Details", name: "Type of test report", value: "APAC Lab" },
-    ],
-  },
-  // Product 1: DNR Low-back Chair
-  {
-    id: "5116877-28259191521",
-    name: "Low-back Chair With Without Armrest",
-    brand: "DNR SYSTEMS",
-    model: "(DNR OFFICE CHAIR DNR 09)",
-    price: 1500.00,
-    mrp: 4500.00,
-    discount: 67,
-    availability: 100,
-    minQty: 10,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: dnrs1, main: dnrm1 },
-      { thumbnail: dnrs2, main: dnrm2 },
-      { thumbnail: dnrs3, main: dnrm3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Backrest Height", value: "Low-back" },
-      { category: "Specifications", name: "Armrest Available", value: "No" },
-      { category: "Chair Seat", name: "Seat upholstery material", value: "Leatherette" },
-    ],
-  },
-  // Product 2: R. L. G Garg Revolving Chair
-  {
-    id: "5116877-55035709738",
-    name: "Low-back Revolving Chair of Adjustable height with Wheels",
-    brand: "R. L. G Garg Furniture",
-    model: "(SM/RC/802)",
-    price: 2500.00,
-    mrp: 9000.05,
-    discount: 72,
-    availability: 877,
-    minQty: 10,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: gargS1, main: gargM1 },
-      { thumbnail: gargS2, main: gargM2 },
-      { thumbnail: gargS3, main: gargM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Type of Chair", value: "Revolving Chair of Adjustable height with Wheels" },
-      { category: "Specifications", name: "Seat upholstery material", value: "Polyester fabric" },
-      { category: "Specifications", name: "Backrest Height", value: "Low-back" },
-    ],
-  },
-  // Product 3: STEAD KRAFT Filing Cabinet
-  {
-    id: "5116877-98128241302",
-    name: "Two – drawer type Steel Filing Cabinets",
-    brand: "STEAD KRAFT",
-    model: "(SKSPL/SFC/001)",
-    price: 6300.00,
-    mrp: 7000.00,
-    discount: 10,
-    availability: 100,
-    minQty: 2,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: steadS1, main: steadM1 },
-      { thumbnail: steadS2, main: steadM2 },
-      { thumbnail: steadS3, main: steadM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Type", value: "Two – drawer type" },
-      { category: "Specifications", name: "Drawer suspension", value: "Ball-bearing suspension" },
-      { category: "Specifications", name: "Product colour", value: "Grey" },
-    ],
-  },
-  // Product 4: KANTOOR FURNITURE Modular Table
-  {
-    id: "5116877-49535649906",
-    name: "Modular Table with Particle Board Table Top and Metal Understructure",
-    brand: "KANTOOR FURNITURE",
-    model: "(Modular Table with Particle Board Table Top and Me)",
-    price: 3000.00,
-    mrp: 17900.00,
-    discount: 83,
-    availability: 975,
-    minQty: 20,
-    countryOfOrigin: "India",
-    localContent: 80,
-    seller: { name: "Resellers", verified: true, rating: "4.5 - 5.0" },
-    images: [
-      { thumbnail: kantoorS1, main: kantoorM1 },
-      { thumbnail: kantoorS2, main: kantoorM2 },
-      { thumbnail: kantoorS3, main: kantoorM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Table Top Material", value: "Particle Board" },
-      { category: "Specifications", name: "Shape of Table Top", value: "Rectangle" },
-      { category: "Specifications", name: "Understructure Material", value: "Metal Understructure" },
-    ],
-  },
-  // Product 5: AARIHANT CRAFT Executive Table
-  {
-    id: "5116877-81186347518",
-    name: "Rectangle Executive Table with Keyboard Tray and Pedestal Unit",
-    brand: "AARIHANT CRAFT",
-    model: "(EXECUTIVE TABLE)",
-    price: 15000.00,
-    mrp: 35000.05,
-    discount: 57,
-    availability: 590,
-    minQty: 2,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: aarihantS1, main: aarihantM1 },
-      { thumbnail: aarihantS2, main: aarihantM2 },
-      { thumbnail: aarihantS3, main: aarihantM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Type", value: "Executive Table with Keyboard Tray and Pedestal Unit" },
-      { category: "Specifications", name: "Table Top Material", value: "Particle Board" },
-      { category: "Specifications", name: "Pedestal Unit", value: "Yes" },
-    ],
-  },
-  // Product 6: Supreme Craft Shelving
-  {
-    id: "5116877-28208451747",
-    name: "Metal Shelving Racks (Adjustable Type)",
-    brand: "Supreme Craft",
-    model: "(NA)",
-    price: 2500.00,
-    mrp: 30000.00,
-    discount: 92,
-    availability: 49,
-    minQty: 1,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "3.5 - 3.99" },
-    images: [
-      { thumbnail: supremeS1, main: supremeM1 },
-      { thumbnail: supremeS2, main: supremeM2 },
-      { thumbnail: supremeS3, main: supremeM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Governing Standard", value: "Conformity to IS 1883" },
-      { category: "Generic", name: "Types of Shelving Racks", value: "Open-type" },
-    ],
-  },
-  // Product 7: Auditorium Chair
-  {
-    id: "5116877-65592269550",
-    name: "Auditorium Chair (V2)",
-    brand: "Unbranded",
-    model: "(PFC-AC)",
-    price: 4000.00,
-    mrp: 23500.00,
-    discount: 83,
-    availability: 280,
-    minQty: 220,
-    countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "Resellers", verified: true, rating: "4.5 - 5.0" },
-    images: [
-      { thumbnail: audiS1, main: audiM1 },
-      { thumbnail: audiS2, main: audiM2 },
-      { thumbnail: audiS3, main: audiM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Type of Chair Mechanism", value: "Auto Seat Tip Up with Push Back" },
-      { category: "Specifications", name: "Colour of Chair", value: "Red" },
-    ],
-  },
-  // Product 8: Classroom Stool
-  {
-    id: "5116877-89307053900",
-    name: "Square Classroom Stools Load of 75 Kg",
-    brand: "Unbranded",
-    model: "(Classroom Stools)",
-    price: 100.00,
-    mrp: 1200.00,
-    discount: 92,
-    availability: 600,
+    id: "5116877-34097804961",
+    name: "Auditorium Chair Auto Seat Tip Up without Push Back",
+    brand: "Seatech OEM",
+    model: "SEATECH AUDI03",
+    category: "Auditorium Chair (V2)",
+    price: 4100,
+    availability: 3000,
     minQty: 100,
-    countryOfOrigin: "Not Declared",
-    localContent: 0,
-    seller: { name: "Resellers", verified: false, rating: "4.0 - 4.49" },
-    images: [
-      { thumbnail: stoolS1, main: stoolM1 },
-      { thumbnail: stoolS2, main: stoolM2 },
-      { thumbnail: stoolS3, main: stoolM3 },
-    ],
-    specifications: [
-      { category: "Specifications", name: "Stools stand a load of", value: "75 Kg" },
-      { category: "Specifications", name: "Top material", value: "Commercial Block Board" },
-    ],
-  },
-  // Product 9: HANS FABRICATORS Chair
-  {
-    id: "5116877-55170119102",
-    name: "Chair Frame type Legs Half writing Pad Studs",
-    brand: "HANS FABRICATORS",
-    model: "(HF- Writing Pad Chair/985)",
-    price: 2000.00,
-    mrp: 3000.00,
-    discount: 33,
-    availability: 1050,
-    minQty: 150,
+    discount: 68,
     countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "Resellers", verified: true, rating: "4.0 - 4.49" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.5 },
     images: [
-      { thumbnail: hansS1, main: hansM1 },
-      { thumbnail: hansS2, main: hansM2 },
-      { thumbnail: hansS3, main: hansM3 },
+      { main: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-B.jpg", thumbnail: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-S.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-B copy.jpg", thumbnail: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-S copy.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-B copy 2.jpg", thumbnail: "/categories/Auditorium Chair (V2)-1/Auditorium Chair (V2)-S copy 2.jpg" }
     ],
-    specifications: [
-      { category: "Specifications", name: "Chair Frame type", value: "Legs" },
-      { category: "Specifications", name: "Writing Pad Type", value: "Half writing Pad" },
-    ],
+    specifications: [{ category: "Seat Mechanism", name: "Type", value: "Auto Seat Tip Up" }, { category: "Seat Mechanism", name: "Push Back", value: "No" }, { category: "Material", name: "Seat Upholstery", value: "Fabric with PU Foam" }]
   },
-  // Product 10: Unbranded Sofa
   {
-    id: "5116877-54303299961",
-    name: "Sofas & Couches, 3 Seater",
-    brand: "Unbranded",
-    model: "(Couch)",
-    price: 1260.00,
-    mrp: 125999.00,
-    discount: 99,
-    availability: 12,
-    minQty: 1,
-    countryOfOrigin: "Not Declared",
-    localContent: 95,
-    seller: { name: "Resellers", verified: false, rating: "4.5 - 5.0" },
+    id: "5116877-68500433874",
+    name: "Auditorium Chair Auto Seat Tip Up with Sliding Seat & Push Back",
+    brand: "Seatech OEM",
+    model: "SEATECH AUDI01",
+    category: "Auditorium Chair (V2)",
+    price: 4500,
+    availability: 5000,
+    minQty: 100,
+    discount: 67,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.5 },
     images: [
-      { thumbnail: sofaS1, main: sofaM1 },
-      { thumbnail: sofaS2, main: sofaM2 },
-      { thumbnail: sofaS3, main: sofaM3 },
+      { main: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-B.jpg", thumbnail: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-S.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-B copy.jpg", thumbnail: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-S copy.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-B copy 2.jpg", thumbnail: "/categories/Auditorium Chair (V2)-2/Auditorium Chair (V2)-S copy 2.jpg" }
     ],
-    specifications: [
-      { category: "Specifications", name: "Sofa Features", value: "Sectional, Sofa cum Bed" },
-      { category: "Specifications", name: "Material", value: "Bamboo" },
-    ],
+    specifications: [{ category: "Seat Mechanism", name: "Type", value: "Auto Seat Tip Up" }, { category: "Seat Mechanism", name: "Feature", value: "Sliding Seat with Push Back" }]
   },
-  // Product 11: skn Cafeteria Chair
   {
-    id: "5116877-72425320728",
-    name: "Rectangular Cafeteria Chair With Armrest",
-    brand: "skn",
-    model: "(PLASTICE CHAIR)",
-    price: 300.00,
-    mrp: 2550.00,
-    discount: 88,
-    availability: 20,
+    id: "5116877-98703837844",
+    name: "Auditorium Chair Auto Seat Tip Up with Writing Pad",
+    brand: "Seatech OEM",
+    model: "SEATECH AUDI02",
+    category: "Auditorium Chair (V2)",
+    price: 6500,
+    availability: 2000,
+    minQty: 100,
+    discount: 58,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.5 },
+    images: [
+      { main: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-B.jpg", thumbnail: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-S.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-B copy.jpg", thumbnail: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-S copy.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-B copy 2.jpg", thumbnail: "/categories/Auditorium Chair (V2)-3/Auditorium Chair (V2)-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Seat Mechanism", name: "Type", value: "Auto Seat Tip Up" }, { category: "Components", name: "Writing Pad", value: "Foldable (Right Side)" }]
+  },
+  {
+    id: "5116877-14202137000",
+    name: "Auditorium Chair Sliding Seat with Fabric Back Cover",
+    brand: "Seatech OEM",
+    model: "SEATECH AUDI08",
+    category: "Auditorium Chair (V2)",
+    price: 9100,
+    availability: 2500,
+    minQty: 40,
+    discount: 39,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-B.jpg", thumbnail: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-S.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-B copy.jpg", thumbnail: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-S copy.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-B copy 2.jpg", thumbnail: "/categories/Auditorium Chair (V2)-4/Auditorium Chair (V2)-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Seat Mechanism", name: "Type", value: "Auto Seat Tip Up" }, { category: "Construction", name: "Back Cover", value: "Fabric Upholstered" }]
+  },
+  {
+    id: "5116877-42201428071",
+    name: "Auditorium Chair Auto Seat Tip Up with Plastic Back Cover",
+    brand: "Seatech OEM",
+    model: "AUDI 11",
+    category: "Auditorium Chair (V2)",
+    price: 19500,
+    availability: 1000,
+    minQty: 40,
+    discount: 24,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-B.jpg", thumbnail: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-S.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-B copy.jpg", thumbnail: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-S copy.jpg" },
+      { main: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-B copy 2.jpg", thumbnail: "/categories/Auditorium Chair (V2)-5/Auditorium Chair (V2)-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Seat Mechanism", name: "Type", value: "Auto Seat Tip Up" }, { category: "Construction", name: "Back Cover", value: "Plastic Moulded" }]
+  },
+  
+  // --- Category: Bunk Beds ---
+  {
+    id: "5116877-3948376833",
+    name: "Tier bunk beds (Fixed) for Adult",
+    brand: "Seatech OEM",
+    model: "SEATECH BBD02",
+    category: "Bunk Beds as per IS 17636",
+    price: 7500,
+    availability: 1200,
+    minQty: 30,
+    discount: 35,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.5 },
+    images: [
+      { main: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-B.jpg", thumbnail: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-S.jpg" },
+      { main: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-B copy.jpg", thumbnail: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-S copy.jpg" },
+      { main: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-B copy 2.jpg", thumbnail: "/categories/Bunk Beds as per IS 17636/Bunk Beds as per IS 17636-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "General", name: "Type", value: "Double Tier (Fixed)" }, { category: "Material", name: "Construction", value: "Metal" }]
+  },
+
+  // --- Category: Chair for General Purpose ---
+  {
+    id: "5116877-5238369627",
+    name: "Low-back Chair With Without Armrest",
+    brand: "Seatech OEM",
+    model: "SEATECHCWV06",
+    category: "Chair for General Purpose",
+    price: 1900,
+    availability: 5000,
+    minQty: 200,
+    discount: 75,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-1/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-1/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-1/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-1/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-1/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-1/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Without Armrest" }]
+  },
+  {
+    id: "5116877-198263522",
+    name: "Mid-back Chair With Fixed armrest with Padding",
+    brand: "Seatech OEM",
+    model: "SEATECH CWV05",
+    category: "Chair for General Purpose",
+    price: 1950,
+    availability: 1000,
+    minQty: 40,
+    discount: 74,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-2/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-2/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-2/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-2/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-2/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-2/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Padding" }]
+  },
+  {
+    id: "5116877-35771148436",
+    name: "Mid-back Chair With Without Armrest",
+    brand: "Seatech OEM",
+    model: "SEATECH CWV04",
+    category: "Chair for General Purpose",
+    price: 3500,
+    availability: 1000,
+    minQty: 12,
+    discount: 46,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-3/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-3/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-3/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-3/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-3/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-3/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Without Armrest" }]
+  },
+  {
+    id: "5116877-61038404328",
+    name: "Low-back Chair With Fixed armrest with Padding",
+    brand: "Seatech OEM",
+    model: "SEATECH CWV01",
+    category: "Chair for General Purpose",
+    price: 3500,
+    availability: 1000,
+    minQty: 10,
+    discount: 63,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-4/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-4/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-4/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-4/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-4/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-4/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Padding" }]
+  },
+  {
+    id: "5116877-20313114705",
+    name: "Low-back Chair With Without Armrest",
+    brand: "Seatech OEM",
+    model: "SEATECH LWV01",
+    category: "Chair for General Purpose",
+    price: 4100,
+    availability: 1000,
+    minQty: 21,
+    discount: 57,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-5/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-5/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-5/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-5/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-5/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-5/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Without Armrest" }]
+  },
+  {
+    id: "5116877-69216713632",
+    name: "Low-back Chair With Fixed armrest with Cushion",
+    brand: "Seatech OEM",
+    model: "Seatech CWV10",
+    category: "Chair for General Purpose",
+    price: 4500,
+    availability: 5000,
     minQty: 20,
+    discount: 53,
     countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "Resellers", verified: true, rating: "4.0 - 4.49" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: placeholder1, main: placeholder1 },
-      { thumbnail: placeholder2, main: placeholder2 },
-      { thumbnail: placeholder3, main: placeholder3 },
+      { main: "/categories/Chair for General Purpose-6/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-6/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-6/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-6/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-6/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-6/Chair for General Purpose-S copy 2.jpg" }
     ],
-    specifications: [
-      { category: "Specifications", name: "Chair Armrest", value: "With Armrest" },
-      { category: "Specifications", name: "Material of Chair Seat", value: "Moulded Plastic" },
-    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Cushion" }]
   },
-  // Product 12: KnK Metal bed
   {
-    id: "5116877-7868588492",
-    name: "Metal bed with Headboard only of color Black",
-    brand: "KnK",
-    model: "(KKMB4500)",
-    price: 5000.00,
-    mrp: 6000.00,
-    discount: 17,
+    id: "5116877-10867581211",
+    name: "Mid-back Chair With Fixed armrest without cushion",
+    brand: "Seatech OEM",
+    model: "SEATECH CWV02",
+    category: "Chair for General Purpose",
+    price: 4900,
+    availability: 1000,
+    minQty: 12,
+    discount: 53,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-7/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-7/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-7/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-7/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-7/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-7/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest without cushion" }, { category: "Features", name: "Lumbar Support", value: "Yes" }]
+  },
+  {
+    id: "5116877-4226670578",
+    name: "Low-back Chair With Fixed armrest with Padding",
+    brand: "Seatech OEM",
+    model: "SEATECH CWV03",
+    category: "Chair for General Purpose",
+    price: 6500,
+    availability: 1000,
+    minQty: 12,
+    discount: 38,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-8/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-8/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-8/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-8/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-8/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-8/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Padding" }]
+  },
+  {
+    id: "5116877-19625345869",
+    name: "Mid-back Chair With Fixed armrest without cushion",
+    brand: "Seatech OEM",
+    model: "CGP301A",
+    category: "Chair for General Purpose",
+    price: 7500,
     availability: 500,
+    minQty: 10,
+    discount: 57,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-9/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-9/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-9/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-9/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-9/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-9/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest without cushion" }]
+  },
+  {
+    id: "5116877-71226237740",
+    name: "Mid-back Chair With Fixed armrest without cushion",
+    brand: "Seatech OEM",
+    model: "CWV MB301",
+    category: "Chair for General Purpose",
+    price: 8500,
+    availability: 500,
+    minQty: 10,
+    discount: 51,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-10/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-10/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-10/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-10/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-10/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-10/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest without cushion" }]
+  },
+  {
+    id: "5116877-9668864051",
+    name: "Low-back Chair With Fixed armrest with Cushion",
+    brand: "Seatech OEM",
+    model: "SEATECH CWTLBR07",
+    category: "Chair for General Purpose",
+    price: 9100,
+    availability: 500,
+    minQty: 10,
+    discount: 41,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-11/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-11/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-11/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-11/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-11/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-11/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Low-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Cushion" }, { category: "Features", name: "Lumbar Support", value: "Yes" }]
+  },
+  {
+    id: "5116877-96367899695",
+    name: "Mid-back Chair With Fixed armrest with Cushion",
+    brand: "Seatech OEM",
+    model: "Seatech CWV07",
+    category: "Chair for General Purpose",
+    price: 10000,
+    availability: 500,
+    minQty: 10,
+    discount: 43,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-12/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-12/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-12/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-12/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-12/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-12/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Cushion" }, { category: "Features", name: "Lumbar Support", value: "Yes" }]
+  },
+  {
+    id: "5116877-29477886754",
+    name: "Mid-back Chair With Without Armrest",
+    brand: "Seatech OEM",
+    model: "CWV MB11",
+    category: "Chair for General Purpose",
+    price: 9990,
+    availability: 1000,
+    minQty: 40,
+    discount: 43,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-13/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-13/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-13/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-13/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-13/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-13/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Without Armrest" }, { category: "Features", name: "Lumbar Support", value: "Yes" }]
+  },
+  {
+    id: "5116877-53488041209",
+    name: "Mid-back Chair With Fixed armrest with Cushion",
+    brand: "Seatech OEM",
+    model: "CWV MB12",
+    category: "Chair for General Purpose",
+    price: 9995,
+    availability: 1500,
+    minQty: 40,
+    discount: 43,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Chair for General Purpose-14/Chair for General Purpose-B.jpg", thumbnail: "/categories/Chair for General Purpose-14/Chair for General Purpose-S.jpg" },
+      { main: "/categories/Chair for General Purpose-14/Chair for General Purpose-B copy.jpg", thumbnail: "/categories/Chair for General Purpose-14/Chair for General Purpose-S copy.jpg" },
+      { main: "/categories/Chair for General Purpose-14/Chair for General Purpose-B copy 2.jpg", thumbnail: "/categories/Chair for General Purpose-14/Chair for General Purpose-S copy 2.jpg" }
+    ],
+    specifications: [{ category: "Dimensions", name: "Backrest Height", value: "Mid-back" }, { category: "Features", name: "Armrest", value: "Fixed armrest with Cushion" }, { category: "Features", name: "Lumbar Support", value: "Yes" }]
+  },
+
+  // --- Category: Classroom Stools ---
+  {
+    id: "5116877-81663803194",
+    name: "Primer coated and Painted Square Classroom Stools (100 Kg)",
+    brand: "Seatech OEM",
+    model: "SEATECH CLS02",
+    category: "Classroom Stools",
+    price: 950,
+    availability: 2000,
     minQty: 50,
+    discount: 62,
     countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: knkS1, main: knkM1 },
-      { thumbnail: knkS2, main: knkM2 },
-      { thumbnail: knkS3, main: knkM3 },
+      { main: "/categories/Classroom Stools-1/Classroom Stools-B.jpg", thumbnail: "/categories/Classroom Stools-1/Classroom Stools-S.jpg" },
+      { main: "/categories/Classroom Stools-1/Classroom Stools-B copy.jpg", thumbnail: "/categories/Classroom Stools-1/Classroom Stools-S copy.jpg" },
+      { main: "/categories/Classroom Stools-1/Classroom Stools-B copy 2.jpg", thumbnail: "/categories/Classroom Stools-1/Classroom Stools-S copy 2.jpg" }
     ],
     specifications: [
-      { category: "Generic", name: "Type of Metal bed", value: "Metal bed with Headboard only" },
-      { category: "Generic", name: "Size Category", value: "Single" },
-    ],
+      { category: "Dimensions", name: "Size (LxBxH)", value: "350mm x 350mm x 500mm" },
+      { category: "Material", name: "Top Material", value: "Ply wood (13mm)" },
+      { category: "Material", name: "Frame Material", value: "MS pipe heavy duty" },
+      { category: "Performance", name: "Load Capacity", value: "100 Kg" },
+      { category: "Finish", name: "Paint", value: "Primer coated and Painted" }
+    ]
   },
-  // Product 13: sentiment Desk and Chair
   {
-    id: "5116877-88634729090",
-    name: "Desk and Chair (Separate) for Age Group for 1 Seater",
-    brand: "sentiment",
-    model: "(ST/D/01)",
-    price: 2000.00,
-    mrp: 18000.00,
-    discount: 89,
+    id: "5116877-94001835796",
+    name: "Powder coated Square Classroom Stools (100 Kg)",
+    brand: "Seatech OEM",
+    model: "SEATECH CLS03",
+    category: "Classroom Stools",
+    price: 1500,
     availability: 100,
-    minQty: 5,
+    minQty: 50,
+    discount: 67,
     countryOfOrigin: "India",
-    localContent: 75,
-    seller: { name: "OEM", verified: true, rating: "4.0 - 4.49" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: sentimentS1, main: sentimentM1 },
-      { thumbnail: sentimentS2, main: sentimentM2 },
-      { thumbnail: sentimentS3, main: sentimentM3 },
+      { main: "/categories/Classroom Stools-2/Classroom Stools-B.jpg", thumbnail: "/categories/Classroom Stools-2/Classroom Stools-S.jpg" },
+      { main: "/categories/Classroom Stools-2/Classroom Stools-B copy.jpg", thumbnail: "/categories/Classroom Stools-2/Classroom Stools-S copy.jpg" },
+      { main: "/categories/Classroom Stools-2/Classroom Stools-B copy 2.jpg", thumbnail: "/categories/Classroom Stools-2/Classroom Stools-S copy 2.jpg" }
     ],
     specifications: [
-      { category: "Generic", name: "Type", value: "Desk and Chair (Separate)" },
-      { category: "Generic", name: "Suitable for Age Group", value: "6 TO 9 ,9 TO 12 ,12+" },
-    ],
+      { category: "Dimensions", name: "Size (LxBxH)", value: "400mm x 400mm x 550mm" },
+      { category: "Material", name: "Top Material", value: "MDF Board (SBG II)" },
+      { category: "Material", name: "Frame Material", value: "MS pipe heavy duty" },
+      { category: "Performance", name: "Load Capacity", value: "100 Kg" },
+      { category: "Finish", name: "Paint", value: "Powder coated" }
+    ]
   },
-  // Product 14: AARIHANT CRAFT Computer table
   {
-    id: "5116877-21412275353",
-    name: "Computer table with additional unit",
-    brand: "AARIHANT CRAFT",
-    model: "(TABLE)",
-    price: 3000.00,
-    mrp: 15000.00,
-    discount: 80,
-    availability: 1,
-    minQty: 1,
+    id: "5116877-17349111611",
+    name: "Primer coated and Painted Square Classroom Stools (75 Kg)",
+    brand: "Seatech OEM",
+    model: "SEATECH CLS01",
+    category: "Classroom Stools",
+    price: 2500,
+    availability: 1000,
+    minQty: 25,
+    discount: 29,
     countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "Resellers", verified: true, rating: "4.0 - 4.49" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: compS1, main: compM1 },
-      { thumbnail: compS2, main: compM2 },
-      { thumbnail: compS3, main: compM3 },
+      { main: "/categories/Classroom Stools-3/Classroom Stools-B.jpg", thumbnail: "/categories/Classroom Stools-3/Classroom Stools-S.jpg" },
+      { main: "/categories/Classroom Stools-3/Classroom Stools-B copy.jpg", thumbnail: "/categories/Classroom Stools-3/Classroom Stools-S copy.jpg" },
+      { main: "/categories/Classroom Stools-3/Classroom Stools-B copy 2.jpg", thumbnail: "/categories/Classroom Stools-3/Classroom Stools-S copy 2.jpg" }
     ],
     specifications: [
-      { category: "Generic", name: "Type", value: "Computer table with additional unit" },
-      { category: "Table Top", name: "Material", value: "Particle Board" },
-    ],
+      { category: "Dimensions", name: "Size (LxBxH)", value: "400mm x 400mm x 600mm" },
+      { category: "Material", name: "Top Material", value: "Block Board (BWP grade)" },
+      { category: "Material", name: "Frame Material", value: "Wood" },
+      { category: "Performance", name: "Load Capacity", value: "75 Kg" },
+      { category: "Finish", name: "Paint", value: "Primer coated and Painted" }
+    ]
   },
-  // Product 15: GOYAL CRAFT Classroom Desk
+  // --- Composite Office Tables confirming to IS 8126 (V2) ---
   {
-    id: "5116877-92939289690",
-    name: "1 Seater Classroom Desk for 12+ Years Age Group",
-    brand: "GOYAL CRAFT",
-    model: "(GF/D/01)",
-    price: 2000.00,
-    mrp: 2500.00,
-    discount: 20,
-    availability: 20,
+    id: "5116877-46642373865",
+    name: "Composite Office Table with Locker Unit (1200x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH CST07",
+    category: "Composite Office Tables confirming to IS 8126 (V2)",
+    price: 9500,
+    availability: 105,
+    minQty: 10,
+    discount: 55,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-B.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-S.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-B copy.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-S copy.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-B copy 2.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-1/Composite Office Tables confirming to IS 8126 (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Storage Type", value: "Locker unit" },
+      { category: "Dimensions", name: "Size (LxWxT)", value: "1200mm x 600mm x 20mm" },
+      { category: "Material", name: "Table Top", value: "Particle Boards" },
+      { category: "Construction", name: "Pedestal", value: "Mild Steel Tubular" },
+      { category: "Finish", name: "Color", value: "Brown" },
+      { category: "Warranty", name: "Period", value: "3 Years" }
+    ]
+  },
+  {
+    id: "5116877-36072246766",
+    name: "Composite Office Table with Drawer & Filing Unit (1200x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH",
+    category: "Composite Office Tables confirming to IS 8126 (V2)",
+    price: 17000,
+    availability: 1000,
+    minQty: 19,
+    discount: 11,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-B.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-S.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-B copy.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-S copy.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-B copy 2.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-2/Composite Office Tables confirming to IS 8126 (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Storage Type", value: "Drawer and filing unit" },
+      { category: "Dimensions", name: "Size (LxWxT)", value: "1200mm x 600mm x 20mm" },
+      { category: "Material", name: "Table Top", value: "Particle Boards" },
+      { category: "Construction", name: "Pedestal", value: "Mild Steel Tubular" },
+      { category: "Finish", name: "Color", value: "Black" },
+      { category: "Warranty", name: "Period", value: "2 Years" }
+    ]
+  },
+  {
+    id: "5116877-36318751233",
+    name: "Composite Office Table with Three-Drawer Unit (1200x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH CST03",
+    category: "Composite Office Tables confirming to IS 8126 (V2)",
+    price: 21000,
+    availability: 100,
+    minQty: 10,
+    discount: 28,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-B.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-S.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-B copy.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-S copy.jpg" },
+      { main: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-B copy 2.jpg", thumbnail: "/categories/Composite Office Tables confirming to IS 8126 (V2)-3/Composite Office Tables confirming to IS 8126 (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Storage Type", value: "Three-drawer unit" },
+      { category: "Dimensions", name: "Size (LxWxT)", value: "1200mm x 600mm x 20mm" },
+      { category: "Material", name: "Table Top", value: "Particle Boards" },
+      { category: "Construction", name: "Pedestal", value: "Mild Steel Tubular" },
+      { category: "Finish", name: "Color", value: "Brown" },
+      { category: "Warranty", name: "Period", value: "1 Year" }
+    ]
+  },
+  // --- Computer Table (V2) ---
+  {
+    id: "5116877-1278088971",
+    name: "Modular Table with MR Ply Table Top and Metal Understructure (600x750mm)",
+    brand: "Seatech OEM",
+    model: "MT SIDH8125",
+    category: "Computer Table (V2)",
+    price: 4700,
+    availability: 5000,
+    minQty: 100,
+    discount: 51,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-1/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-1/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-1/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-1/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-1/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-1/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "MR Ply (Moisture Resistant)" },
+      { category: "Dimensions", name: "Size (WxD)", value: "600mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-77799422812",
+    name: "Modular Table with Marine Ply Top and Wooden Understructure (900x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MTW01",
+    category: "Computer Table (V2)",
+    price: 4900,
+    availability: 1000,
+    minQty: 45,
+    discount: 66,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-2/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-2/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-2/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-2/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-2/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-2/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Marine Ply" },
+      { category: "Dimensions", name: "Size (WxD)", value: "900mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-32323298921",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1800x750mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT04",
+    category: "Computer Table (V2)",
+    price: 12500,
+    availability: 791,
+    minQty: 11,
+    discount: 34,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-3/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-3/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-3/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-3/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-3/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-3/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-92767341034",
+    name: "Modular Table with Particle Board Top and Metal Understructure (900x600mm)",
+    brand: "Seatech OEM",
+    model: "MT LK01",
+    category: "Computer Table (V2)",
+    price: 12500,
+    availability: 500,
+    minQty: 41,
+    discount: 14,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-4/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-4/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-4/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-4/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-4/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-4/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "900mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (50x50mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-2155067800",
+    name: "Modular Table with Particle Board Top and Metal Understructure (900x600mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT09",
+    category: "Computer Table (V2)",
+    price: 14000,
+    availability: 5000,
+    minQty: 10,
+    discount: 26,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-5/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-5/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-5/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-5/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-5/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-5/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "900mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-49315880640",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1800x900mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT11",
+    category: "Computer Table (V2)",
+    price: 14200,
+    availability: 1000,
+    minQty: 40,
+    discount: 25,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-6/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-6/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-6/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-6/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-6/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-6/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (50x50mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-74516472909",
+    name: "Modular Table with MDF Top and Wooden Understructure (1200x750mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT10",
+    category: "Computer Table (V2)",
+    price: 14500,
+    availability: 1000,
+    minQty: 40,
+    discount: 24,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-7/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-7/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-7/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-7/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-7/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-7/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "MDF Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1200mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "MDF Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-92566180604",
+    name: "Modular Table with Particle Board Top and Metal Understructure (900x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT07",
+    category: "Computer Table (V2)",
+    price: 14500,
+    availability: 5000,
+    minQty: 40,
+    discount: 24,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-8/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-8/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-8/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-8/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-8/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-8/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "900mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-71436442294",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1200x750mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT12",
+    category: "Computer Table (V2)",
+    price: 15000,
+    availability: 350,
+    minQty: 7,
+    discount: 21,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-9/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-9/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-9/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-9/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-9/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-9/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1200mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-72462684731",
+    name: "Modular Table with MDF Top and Wooden Understructure (1050x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT08",
+    category: "Computer Table (V2)",
+    price: 15500,
+    availability: 5000,
+    minQty: 40,
+    discount: 18,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-10/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-10/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-10/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-10/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-10/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-10/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "MDF Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1050mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "MDF Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-81482850688",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1800x900mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT15",
+    category: "Computer Table (V2)",
+    price: 16665,
+    availability: 60,
+    minQty: 60,
+    discount: 66,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.8 },
+    images: [
+      { main: "/categories/Computer Table (V2)-11/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-11/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-11/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-11/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-11/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-11/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-17792425477",
+    name: "Modular Table with Particle Board Top and Wooden Understructure (1800x900mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT14A",
+    category: "Computer Table (V2)",
+    price: 19000,
+    availability: 500,
+    minQty: 10,
+    discount: 51,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-12/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-12/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-12/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-12/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-12/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-12/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-99456516683",
+    name: "Modular Table with Particle Board Top and Wooden Understructure (600x750mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT03",
+    category: "Computer Table (V2)",
+    price: 19000,
+    availability: 1000,
+    minQty: 10,
+    discount: 34,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-13/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-13/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-13/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-13/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-13/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-13/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "600mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-27221498491",
+    name: "Modular Table with BWP Ply Top and Metal Understructure (1200x600mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT19",
+    category: "Computer Table (V2)",
+    price: 19000,
+    availability: 1000,
+    minQty: 10,
+    discount: 51,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-14/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-14/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-14/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-14/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-14/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-14/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "BWP Ply" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1200mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-2399884314",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1200x900mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT01",
+    category: "Computer Table (V2)",
+    price: 19500,
+    availability: 1000,
     minQty: 20,
+    discount: 22,
     countryOfOrigin: "India",
-    localContent: 100,
-    seller: { name: "OEM", verified: true, rating: "4.5 - 5.0" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: goyalS1, main: goyalM1 },
-      { thumbnail: goyalS2, main: goyalM2 },
-      { thumbnail: goyalS3, main: goyalM3 },
+      { main: "/categories/Computer Table (V2)-15/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-15/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-15/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-15/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-15/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-15/Computer Table (V2)-S copy 2.jpg" }
     ],
     specifications: [
-      { category: "Generic", name: "Suitable for Age Group", value: "12+" },
-      { category: "Generic", name: "Seating Capacity", value: "1 Seater" },
-    ],
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1200mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (40x40mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
   },
-  // Product 16: BedsCafe Desk and Bench
   {
-    id: "5116877-63067243215",
-    name: "Desk and Bench (Integrated) for Age Group for 3 Seater",
-    brand: "BedsCafe",
-    model: "(BCDB006)",
-    price: 2154.00,
-    mrp: 15000.00,
-    discount: 86,
-    availability: 284,
-    minQty: 1,
+    id: "5116877-72323100072",
+    name: "Modular Table with BWP Ply Top and Wooden Understructure (1200x750mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT17",
+    category: "Computer Table (V2)",
+    price: 21500,
+    availability: 351,
+    minQty: 4,
+    discount: 56,
     countryOfOrigin: "India",
-    localContent: 80,
-    seller: { name: "Resellers", verified: true, rating: "4.5 - 5.0" },
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
     images: [
-      { thumbnail: bedsS1, main: bedsM1 },
-      { thumbnail: bedsS2, main: bedsM2 },
-      { thumbnail: bedsS3, main: bedsM3 },
+      { main: "/categories/Computer Table (V2)-16/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-16/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-16/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-16/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-16/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-16/Computer Table (V2)-S copy 2.jpg" }
     ],
     specifications: [
-      { category: "Generic", name: "Type", value: "Desk and Bench (Integrated)" },
-      { category: "Generic", name: "Seating Capacity", value: "3 Seater" },
-    ],
+      { category: "Material", name: "Table Top", value: "BWP Ply" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1200mm x 750mm" },
+      { category: "Construction", name: "Understructure", value: "BWP Ply (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
   },
+  {
+    id: "5116877-97694322079",
+    name: "Modular Table with Particle Board Top and Wooden Understructure (1800x900mm)",
+    brand: "Seatech OEM",
+    model: "Seatech MT18",
+    category: "Computer Table (V2)",
+    price: 24500,
+    availability: 51,
+    minQty: 3,
+    discount: 49,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-17/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-17/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-17/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-17/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-17/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-17/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-58195571908",
+    name: "Modular Table with Particle Board Top and Wooden Understructure (600x600mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT5",
+    category: "Computer Table (V2)",
+    price: 25000,
+    availability: 500,
+    minQty: 10,
+    discount: 36,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-18/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-18/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-18/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-18/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-18/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-18/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "600mm x 600mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Height Adjustable", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-99347438720",
+    name: "Modular Table with Particle Board Top and Metal Understructure (1800x1200mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT21",
+    category: "Computer Table (V2)",
+    price: 26659,
+    availability: 500,
+    minQty: 20,
+    discount: 15,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V2)-19/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-19/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-19/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-19/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-19/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-19/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "1800mm x 1200mm" },
+      { category: "Construction", name: "Understructure", value: "Mild Steel (60x30mm)" },
+      { category: "Features", name: "Modesty Panel", value: "No" },
+      { category: "Features", name: "Storage", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-49512639890",
+    name: "Modular Table with Particle Board Top and Wooden Understructure (2100x900mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH MT23",
+    category: "Computer Table (V2)",
+    price: 33500,
+    availability: 100,
+    minQty: 10,
+    discount: 32,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.8 },
+    images: [
+      { main: "/categories/Computer Table (V2)-20/Computer Table (V2)-B.jpg", thumbnail: "/categories/Computer Table (V2)-20/Computer Table (V2)-S.jpg" },
+      { main: "/categories/Computer Table (V2)-20/Computer Table (V2)-B copy.jpg", thumbnail: "/categories/Computer Table (V2)-20/Computer Table (V2)-S copy.jpg" },
+      { main: "/categories/Computer Table (V2)-20/Computer Table (V2)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V2)-20/Computer Table (V2)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Size (WxD)", value: "2100mm x 900mm" },
+      { category: "Construction", name: "Understructure", value: "Particle Board (Wooden)" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" },
+      { category: "Features", name: "Storage", value: "Yes" }
+    ]
+  },
+  // --- Computer Table (V3) ---
+  {
+    id: "5116877-41508926487",
+    name: "Computer Table with Footrest (900mm)",
+    brand: "Seatech OEM",
+    model: "CT FB01",
+    category: "Computer Table (V3)",
+    price: 6500,
+    availability: 500,
+    minQty: 10,
+    discount: 74,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V3)-1/Computer Table (V3)-B.jpg", thumbnail: "/categories/Computer Table (V3)-1/Computer Table (V3)-S.jpg" },
+      { main: "/categories/Computer Table (V3)-1/Computer Table (V3)-B copy.jpg", thumbnail: "/categories/Computer Table (V3)-1/Computer Table (V3)-S copy.jpg" },
+      { main: "/categories/Computer Table (V3)-1/Computer Table (V3)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V3)-1/Computer Table (V3)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Type", value: "Computer table with footrest" },
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Length", value: "900mm" },
+      { category: "Features", name: "Keyboard Tray", value: "Wood" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-95895699406",
+    name: "Computer Table with Storage Unit (1350mm)",
+    brand: "Seatech OEM",
+    model: "CT LK1",
+    category: "Computer Table (V3)",
+    price: 9500,
+    availability: 100,
+    minQty: 21,
+    discount: 62,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V3)-2/Computer Table (V3)-B.jpg", thumbnail: "/categories/Computer Table (V3)-2/Computer Table (V3)-S.jpg" },
+      { main: "/categories/Computer Table (V3)-2/Computer Table (V3)-B copy.jpg", thumbnail: "/categories/Computer Table (V3)-2/Computer Table (V3)-S copy.jpg" },
+      { main: "/categories/Computer Table (V3)-2/Computer Table (V3)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V3)-2/Computer Table (V3)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Type", value: "Computer table with Storage unit" },
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Length", value: "1350mm" },
+      { category: "Features", name: "Keyboard Tray", value: "Wood" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" }
+    ]
+  },
+  {
+    id: "5116877-53936961386",
+    name: "Computer Table with Storage Unit (1500mm)",
+    brand: "Seatech OEM",
+    model: "SEATECH CTV3 01",
+    category: "Computer Table (V3)",
+    price: 19000,
+    availability: 150,
+    minQty: 10,
+    discount: 24,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V3)-3/Computer Table (V3)-B.jpg", thumbnail: "/categories/Computer Table (V3)-3/Computer Table (V3)-S.jpg" },
+      { main: "/categories/Computer Table (V3)-3/Computer Table (V3)-B copy.jpg", thumbnail: "/categories/Computer Table (V3)-3/Computer Table (V3)-S copy.jpg" },
+      { main: "/categories/Computer Table (V3)-3/Computer Table (V3)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V3)-3/Computer Table (V3)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Type", value: "Computer table with Storage unit" },
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Length", value: "1500mm" },
+      { category: "Features", name: "Keyboard Tray", value: "Wood" },
+      { category: "Features", name: "Modesty Panel", value: "No" }
+    ]
+  },
+  {
+    id: "5116877-45479357914",
+    name: "Computer Table with Storage Unit & Footrest (900mm)",
+    brand: "Seatech OEM",
+    model: "CT SIDH8125",
+    category: "Computer Table (V3)",
+    price: 21500,
+    availability: 500,
+    minQty: 10,
+    discount: 14,
+    countryOfOrigin: "India",
+    seller: { name: "Seatech OEM", verified: true, rating: 4.2 },
+    images: [
+      { main: "/categories/Computer Table (V3)-4/Computer Table (V3)-B.jpg", thumbnail: "/categories/Computer Table (V3)-4/Computer Table (V3)-S.jpg" },
+      { main: "/categories/Computer Table (V3)-4/Computer Table (V3)-B copy.jpg", thumbnail: "/categories/Computer Table (V3)-4/Computer Table (V3)-S copy.jpg" },
+      { main: "/categories/Computer Table (V3)-4/Computer Table (V3)-B copy 2.jpg", thumbnail: "/categories/Computer Table (V3)-4/Computer Table (V3)-S copy 2.jpg" }
+    ],
+    specifications: [
+      { category: "General", name: "Type", value: "Computer table with Storage & footrest" },
+      { category: "Material", name: "Table Top", value: "Particle Board" },
+      { category: "Dimensions", name: "Length", value: "900mm" },
+      { category: "Features", name: "Keyboard Tray", value: "Wood" },
+      { category: "Features", name: "Modesty Panel", value: "Yes" }
+    ]
+  }
+
 ];
